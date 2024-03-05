@@ -1,12 +1,20 @@
-//import react into the bundle
+// Import React and ReactDOM
 import React from "react";
 import ReactDOM from "react-dom";
 
-// include your styles into the webpack bundle
+// Include your styles into the webpack bundle
 import "../styles/index.css";
 
-//import your own components
+// Import your own components
 import Home from "./component/home.jsx";
+import TrafficLight from "./component/newcodetraffic.jsx";
 
-//render your react application
-ReactDOM.render(<Home />, document.querySelector("#app"));
+
+// Render your React application
+ReactDOM.render(
+  <div>
+    <Home />
+    <TrafficLight /> {/* Render TrafficLight component */}
+  </div>,
+  document.querySelector("#app")
+);
